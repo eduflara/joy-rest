@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="joy-rest:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>joy-rest</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="joy-rest.war">
+      <element id="artifact" artifact-name="joy-rest:war exploded" />
+    </root>
+  </artifact>
+</component>
