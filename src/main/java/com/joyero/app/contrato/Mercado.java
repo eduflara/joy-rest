@@ -1,7 +1,7 @@
 package com.joyero.app.contrato;
 
 public enum Mercado {
-    TASACION("mercadosecundario", "Mercado Secundario");
+    MERCADOSECUNDARIO("mercadosecundario", "Mercado Secundario");
 
     private String codigo;
     private String descripcion;

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @PropertySources({
-        @PropertySource("file:c:/config/joy.properties")
+        @PropertySource("file:c:/sumainfo/config/joy.properties")
 })
 public class AppConfig {
 
