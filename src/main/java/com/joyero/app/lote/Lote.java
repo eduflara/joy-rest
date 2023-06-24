@@ -1,4 +1,4 @@
-package com.joyero.app.contrato;
+package com.joyero.app.lote;
 
 import com.joyero.app.Cliente;
 import com.joyero.base.Entidad;
@@ -10,50 +10,51 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "contrato")
+@Table(name = "lote")
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Inheritance(strategy = InheritanceType.JOINED)
-public class Contrato implements Entidad {
+public class Lote implements Entidad {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "codigo")
-    private String codigo;
-
-    @Column(name = "lugartasacion")
-    private String lugartasacion;
-
-    @Column(name = "tipocontrato")
+    @Column(name = "objeto")
     @Enumerated(EnumType.STRING)
-    private TipoContrato tipoContrato;
-
-    @Column(name = "mercado")
-    @Enumerated(EnumType.STRING)
-    private Mercado mercado;
-
-    @Column(name = "fechaalta")
-    private LocalDateTime fechaAlta;
-
-    @Column(name = "fechacierre")
-    private LocalDateTime fechaCierre;
+    private Objeto objeto;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "cliente", insertable = false, updatable = false)
+    @JoinColumn(name = "contrato", insertable = false, updatable = false)
     @ToString.Exclude
-    private Cliente cliente;
+    private Contrato contrato;
 
-    @Column(name = "cliente")
-    private Long clienteId;
+    @Column(name = "contrato")
+    private Long contratoId;
 
-    @Column(name = "tasador")
-    private String tasador;
+    @Column(name = "descripcion")
+    private String descripcion;
 
-    @Column(name = "personafirma")
-    private String personafirma;
+    @Column(name = "observaciones")
+    private String observaciones;
+
+    @Column(name = "metal")
+    @Enumerated(EnumType.STRING)
+    private Metal objeto;
+
+    @Column(name = "gema")
+    @Enumerated(EnumType.STRING)
+    private Gema objeto;
+
+    @Column(name = "peso")
+    private Double peso;
+
+    @Column(name = "cantidad")
+    private Double cantidad;
+
+
+
 
 
 }

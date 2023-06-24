@@ -1,12 +1,12 @@
-package com.joyero.app.contrato;
+package com.joyero.app.lote;
 
-public enum Mercado {
-    MERCADOSECUNDARIO("mercadosecundario", "Mercado Secundario");
+public enum Objeto {
+    SORTIJA("sortija", "Sortija");
 
     private String codigo;
     private String descripcion;
 
-    Mercado(String codigo, String descripcion) {
+    Objeto(String codigo, String descripcion) {
         this.codigo = codigo;
         this.descripcion = descripcion;
     }

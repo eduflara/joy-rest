@@ -7,24 +7,24 @@ import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
-@RequestMapping("/app/contrato")
-public class ContratoRest extends ControladorRest<Contrato, Long> {
+@RequestMapping("/app/lote")
+public class LoteRest extends ControladorRest<Lote, Long> {
 
     /* Sobrescribir métodos comunes */
     @Override
-    protected void preGuardar(Contrato entidad) {
+    protected void preGuardar(Lote entidad) {
     }
 
     @Override
-    protected void postGuardar(Contrato entidad) {
+    protected void postGuardar(Lote entidad) {
     }
 
     @Override
-    protected void preActualizar(Contrato entidad) {
+    protected void preActualizar(Lote entidad) {
     }
 
     @Override
-    protected void postActualizar(Contrato entidad) {
+    protected void postActualizar(Lote entidad) {
     }
 
     @Override
