@@ -1,4 +1,4 @@
-package com.joyero.app.contrato;
+package com.joyero.app.lote;
 import com.joyero.base.ControladorRest;
 import com.joyero.base.exception.ResultadoException;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -36,12 +36,12 @@ public class LoteRest extends ControladorRest<Lote, Long> {
     }
 
     @Override
-    protected ResultadoException validaGuardar(Contrato entidad) {
+    protected ResultadoException validaGuardar(Lote entidad) {
         return super.validaGuardar(entidad);
     }
 
     @Override
-    protected ResultadoException validaActualizar(Contrato entidad) {
+    protected ResultadoException validaActualizar(Lote entidad) {
         return super.validaActualizar(entidad);
     }
 

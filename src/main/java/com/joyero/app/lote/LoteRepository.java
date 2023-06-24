@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @Repository
-public interface LoteRepository extends JpaRepository<Lote, Long>, QuerydslPredicateExecutor<Contrato> {
+public interface LoteRepository extends JpaRepository<Lote, Long>, QuerydslPredicateExecutor<Lote> {
 
 }

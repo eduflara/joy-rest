@@ -1,6 +1,7 @@
 package com.joyero.app.lote;
 
 import com.joyero.app.Cliente;
+import com.joyero.app.contrato.Contrato;
 import com.joyero.base.Entidad;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -41,11 +42,11 @@ public class Lote implements Entidad {
 
     @Column(name = "metal")
     @Enumerated(EnumType.STRING)
-    private Metal objeto;
+    private Metal metal;
 
     @Column(name = "gema")
     @Enumerated(EnumType.STRING)
-    private Gema objeto;
+    private Gema gema;
 
     @Column(name = "peso")
     private Double peso;
