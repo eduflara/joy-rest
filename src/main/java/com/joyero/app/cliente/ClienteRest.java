@@ -1,5 +1,5 @@
 package com.joyero.app.cliente;
-import com.joyero.app.Cliente;
+import com.joyero.app.cliente.Cliente;
 import com.joyero.base.ControladorRest;
 import com.joyero.base.exception.ResultadoException;
 import org.springframework.web.bind.annotation.CrossOrigin;

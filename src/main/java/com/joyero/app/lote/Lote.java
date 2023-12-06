@@ -1,6 +1,6 @@
 package com.joyero.app.lote;
 
-import com.joyero.app.Cliente;
+import com.joyero.app.cliente.Cliente;
 import com.joyero.app.contrato.Contrato;
 import com.joyero.base.Entidad;
 import lombok.Data;

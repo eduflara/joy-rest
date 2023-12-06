@@ -1,6 +1,6 @@
 package com.joyero.app.contrato;
 
-import com.joyero.app.Cliente;
+import com.joyero.app.cliente.Cliente;
 import com.joyero.base.Entidad;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

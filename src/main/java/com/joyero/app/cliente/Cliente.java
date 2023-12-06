@@ -1,4 +1,4 @@
-package com.joyero.app;
+package com.joyero.app.cliente;
 
 import com.joyero.base.Entidad;
 import lombok.Data;

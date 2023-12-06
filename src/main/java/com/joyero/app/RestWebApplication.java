@@ -14,7 +14,7 @@ import org.springframework.context.annotation.PropertySources;
 
 @SpringBootApplication
 @PropertySources({
-        @PropertySource("file:c:/sumainfo/config/joy.properties")
+        @PropertySource("file:c:/config/joy.properties")
 })
 public class RestWebApplication extends SpringBootServletInitializer {
 }
